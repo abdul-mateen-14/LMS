@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Library GUI",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "ui/gui_main.cpp",
+                "ui/add_book_window.cpp",
+                "ui/borrow_book_window.cpp",
+                "ui/return_book_window.cpp",
+                "ui/delete_book_window.cpp",
+                "ui/view_books_window.cpp",
+
+                "code/book.cpp",
+                "code/library.cpp",
+
+                "-IC:/Fltk/fltk-1.4.4",
+                "-IC:/Fltk/fltk-1.4.4/FL",
+                "-IC:/Fltk/fltk-1.4.4/Build/FL",
+                "-IC:/Users/hassa/OneDrive/Desktop/Library App/ui",
+                "-IC:/Users/hassa/OneDrive/Desktop/Library App/code",
+
+                "-LC:/Fltk/fltk-1.4.4/Build/lib",
+
+                "-lfltk",
+                "-lfltk_images",
+                "-lfltk_png",
+                "-lfltk_jpeg",
+                "-lfltk_z",
+                "-lcomdlg32",
+                "-lcomctl32",
+                "-lole32",
+                "-luuid",
+                "-lshell32",
+                "-lws2_32",
+                "-lgdi32",
+                "-lgdiplus",
+                "-lwinspool",
+
+                "-o",
+                "LibraryGUI.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
