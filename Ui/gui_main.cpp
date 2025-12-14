@@ -18,7 +18,7 @@ Library lib; // Global Library object
 int main() {
 
     // Main window
-    Fl_Window* win = new Fl_Window(500, 500, "?? Library Management System");
+    Fl_Window* win = new Fl_Window(500, 500, "Library Management System");
     win->color(FL_LIGHT2);
 
     // Title
@@ -38,7 +38,7 @@ int main() {
     Fl_Group* btnGroup = new Fl_Group(90, 110, 320, 340);
 
     // Add Book Button
-    Fl_Button* addBookBtn = new Fl_Button(100, 120, 300, 50, "? Add Book");
+    Fl_Button* addBookBtn = new Fl_Button(100, 120, 300, 50, "Add Book");
     addBookBtn->color(FL_BLUE);
     addBookBtn->labelcolor(FL_WHITE);
     addBookBtn->labelfont(FL_HELVETICA_BOLD);
@@ -48,7 +48,7 @@ int main() {
     addBookBtn->callback([](Fl_Widget*, void*) { openAddBookWindow(); });
 
     // Borrow Book Button
-    Fl_Button* borrowBtn = new Fl_Button(100, 190, 300, 50, "?? Borrow Book");
+    Fl_Button* borrowBtn = new Fl_Button(100, 190, 300, 50, "Borrow Book");
     borrowBtn->color(FL_GREEN);
     borrowBtn->labelcolor(FL_WHITE);
     borrowBtn->labelfont(FL_HELVETICA_BOLD);
@@ -58,7 +58,7 @@ int main() {
     borrowBtn->callback([](Fl_Widget*, void*) { openBorrowBookWindow(); });
 
     // Return Book Button
-    Fl_Button* returnBtn = new Fl_Button(100, 260, 300, 50, "?? Return Book");
+    Fl_Button* returnBtn = new Fl_Button(100, 260, 300, 50, "Return Book");
     returnBtn->color(FL_YELLOW);
     returnBtn->labelcolor(FL_BLACK);
     returnBtn->labelfont(FL_HELVETICA_BOLD);
@@ -68,7 +68,7 @@ int main() {
     returnBtn->callback([](Fl_Widget*, void*) { openReturnBookWindow(); });
 
     // Delete Book Button
-    Fl_Button* deleteBtn = new Fl_Button(100, 330, 300, 50, "?? Delete Book");
+    Fl_Button* deleteBtn = new Fl_Button(100, 330, 300, 50, "Delete Book");
     deleteBtn->color(FL_RED);
     deleteBtn->labelcolor(FL_WHITE);
     deleteBtn->labelfont(FL_HELVETICA_BOLD);
@@ -78,7 +78,7 @@ int main() {
     deleteBtn->callback([](Fl_Widget*, void*) { openDeleteBookWindow(); });
 
     // View Books Button
-    Fl_Button* viewBtn = new Fl_Button(100, 400, 300, 50, "?? View Books");
+    Fl_Button* viewBtn = new Fl_Button(100, 400, 300, 50, "View Books");
     viewBtn->color(FL_DARK_CYAN);
     viewBtn->labelcolor(FL_WHITE);
     viewBtn->labelfont(FL_HELVETICA_BOLD);
@@ -95,4 +95,5 @@ int main() {
 
     return Fl::run();
 }
+
 
