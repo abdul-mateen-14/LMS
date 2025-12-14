@@ -1,4 +1,4 @@
-##📚 Library Management System (DSA Project)
+## 📚 Library Management System (DSA Project)
 
 ## 📌 Project Description
 This project is a C++ based Library Management System with a graphical user interface built using FLTK. The system allows librarians to manage books by adding, borrowing, returning, deleting, and viewing books. Data persistence is achieved using file handling on the server side.
@@ -68,3 +68,4 @@ Data is automatically:
 
 ## 🎥 Demo
 A short demo video (`demo.mp4`) is included showing all major features.
+
