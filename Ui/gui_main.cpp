@@ -62,10 +62,10 @@ int main() {
     actionPanel->begin();
 
     // Action Buttons
-    Fl_Button* addBookBtn = createStyledButton(60, 160, 400, 50, "➕ Add New Book", COLOR_ACCENT, "Add a new book to the library");
-    Fl_Button* borrowBtn = createStyledButton(60, 220, 400, 50, "📖 Borrow Book", fl_rgb_color(46, 204, 113), "Borrow a book from the library");
-    Fl_Button* returnBtn = createStyledButton(60, 280, 400, 50, "↩️ Return Book", fl_rgb_color(241, 196, 15), "Return a borrowed book");
-    Fl_Button* deleteBtn = createStyledButton(60, 340, 400, 50, "🗑️ Delete Book", fl_rgb_color(231, 76, 60), "Remove a book from the library");
+    Fl_Button* addBookBtn = createStyledButton(60, 160, 400, 50, "Add New Book", COLOR_ACCENT, "Add a new book to the library");
+    Fl_Button* borrowBtn = createStyledButton(60, 220, 400, 50, "Borrow Book", fl_rgb_color(46, 204, 113), "Borrow a book from the library");
+    Fl_Button* returnBtn = createStyledButton(60, 280, 400, 50, "Return Book", fl_rgb_color(241, 196, 15), "Return a borrowed book");
+    Fl_Button* deleteBtn = createStyledButton(60, 340, 400, 50, "Delete Book", fl_rgb_color(231, 76, 60), "Remove a book from the library");
 
     actionPanel->end();
 
@@ -74,8 +74,8 @@ int main() {
     bottomPanel->box(FL_NO_BOX);
     bottomPanel->begin();
 
-    Fl_Button* viewBtn = createStyledButton(60, 460, 190, 50, "👁️ View All Books", fl_rgb_color(52, 73, 94), "View all books in the library");
-    Fl_Button* exitBtn = createStyledButton(270, 460, 190, 50, "🚪 Exit", fl_rgb_color(149, 165, 166), "Exit the application");
+    Fl_Button* viewBtn = createStyledButton(60, 460, 190, 50, "View All Books", fl_rgb_color(52, 73, 94), "View all books in the library");
+    Fl_Button* exitBtn = createStyledButton(270, 460, 190, 50, "Exit", fl_rgb_color(149, 165, 166), "Exit the application");
 
     bottomPanel->end();
 
