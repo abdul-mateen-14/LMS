@@ -1,71 +1,174 @@
-## 📚 Library Management System (DSA Project)
+# 📚 Library Management System
 
-## 📌 Project Description
-This project is a C++ based Library Management System with a graphical user interface built using FLTK. The system allows librarians to manage books by adding, borrowing, returning, deleting, and viewing books. Data persistence is achieved using file handling on the server side.
+A modern, desktop-based **Library Management System** built with **C++** and the **FLTK (Fast Light Toolkit)** GUI library. This application provides a clean and intuitive graphical interface for managing a library's book collection, including adding, borrowing, returning, and deleting books. All data is persisted locally using a text file to ensure simplicity and reliability.
 
+---
 
-## 🛠️ Technologies Used
-- C++
-- FLTK (Fast Light Toolkit)
-- MinGW (g++)
-- VS Code
+## 📑 Table of Contents
 
+* Project Description
+* Key Features
+* Installation & Dependencies
+* How to Run
+
+  * Running the GUI Application
+  * Running the Server Test
+* Folder Structure
+
+---
+
+## 📖 Project Description
+
+This project was developed to demonstrate the practical application of **Object-Oriented Programming (OOP)**, **dynamic data structures**, and **file I/O** in C++. It features a responsive and user-friendly GUI built using FLTK, along with a robust backend that handles all core library operations.
+
+The system is lightweight, portable, and easy to set up, making it suitable for small libraries, educational institutions, and academic demonstrations.
+
+---
+
+## ✨ Key Features
+
+* ➕ Add new books with title, author, category, and copy count
+* 📖 Borrow books with automatic availability checking
+* ↩️ Return borrowed books
+* 🗑️ Delete books from the collection
+* 👁️ View a complete, scrollable list of all books
+* 💾 Automatic data persistence using a local `.txt` file
+
+---
+
+## 🛠️ Installation & Dependencies
+
+To compile and run this project, the following dependencies are required:
+
+### 1️⃣ Install a C++ Compiler
+
+**Linux (Debian/Ubuntu):**
+
+```bash
+sudo apt update
+sudo apt install build-essential g++
+```
+
+**macOS (Xcode Command Line Tools):**
+
+```bash
+xcode-select --install
+```
+
+**Windows:**
+
+* Install **MinGW-w64** via MSYS2 or download it directly
+* Ensure `g++` is added to the system PATH
+
+---
+
+### 2️⃣ Install the FLTK Library
+
+**Linux (Debian/Ubuntu):**
+
+```bash
+sudo apt install libfltk1.3-dev
+```
+
+**macOS (Homebrew):**
+
+```bash
+brew install fltk
+```
+
+**Windows:**
+
+1. Download the latest FLTK 1.3.x or 1.4.x development package from the official FLTK website
+2. Extract it to a permanent directory (e.g., `C:\fltk`)
+3. Update paths in `.vscode/tasks.json` if FLTK is installed in a different location
+
+---
+
+## ▶️ How to Run
+
+This project includes multiple components. The **GUI application** is the primary interface.
+
+---
+
+### 🖥️ Running the GUI Application
+
+1. Open the complete project folder in **Visual Studio Code**
+2. Press `Ctrl + Shift + P` to open the command palette
+3. Select **Tasks: Run Build Task**
+4. Choose **Build GUI Application**
+5. After successful compilation, an executable will be generated:
+
+   * Linux/macOS: `library_app`
+   * Windows: `LibraryGUI.exe`
+
+Run the application:
+
+```bash
+./library_app
+```
+
+---
+
+### 🧪 Running the Server Test (Console Backend Test)
+
+This mode tests the backend logic without the GUI.
+
+**Compile manually:**
+
+```bash
+g++ -std=c++17 -I./code server.cpp code/library.cpp code/book.cpp -o server_test
+```
+
+**Run the test:**
+
+```bash
+./server_test
+```
+
+This will execute predefined operations and display results in the terminal.
+
+---
 
 ## 📁 Folder Structure
-Project/
+
+```
+Library Management System/
+├── .vscode/                 # VS Code build and launch configurations
+│   ├── launch.json
+│   └── tasks.json
 │
-├── code/ # Core logic & data structures
-├── ui/ # GUI files (FLTK)
-├── server/ # Server-side file handling
-│ └── data/ # Stored data files
-├── docs/ # Flowcharts & diagrams
-├── testcases/ # Test case files
-├── report.pdf
-├── demo.mp4
-└── README.md
+├── code/                    # Core business logic
+│   ├── book.h
+│   ├── book.cpp
+│   ├── library.h
+│   └── library.cpp
+│
+├── ui/                      # GUI components (FLTK)
+│   ├── add_book_window.h/.cpp
+│   ├── borrow_book_window.h/.cpp
+│   ├── return_book_window.h/.cpp
+│   ├── delete_book_window.h/.cpp
+│   └── view_books_window.h/.cpp
+│
+├── server/                  # Data persistence module
+│   └── data/
+│       └── books.txt        # Auto-generated data file
+│
+├── docs/                    # Documentation and diagrams
+│   ├── report.pdf
+│   ├── test_cases.md
+│   └── diagrams.md
+│
+├── gui_main.cpp              # GUI application entry point
+├── main.cpp                  # Console-only entry point
+├── server.cpp                # Backend test entry point
+└── README.md                 # Project documentation
+```
 
+---
 
-## ▶️ How to Run the Project
+📄 For a detailed explanation of system design, algorithms, and testing, please refer to **`docs/report.pdf`**.
 
-### 1️⃣ Install Dependencies
-- Install MinGW (C++ compiler)
-- Install FLTK (same architecture as compiler)
+---
 
-### 2️⃣ Build the Project
-Open VS Code and run:
-Ctrl + Shift + B
-
-
-### 3️⃣ Run the GUI
-Execute:
-LibraryGUI.exe
-
-
-## 🖥️ Features
-- Add new books
-- Borrow books
-- Return books
-- Delete books
-- View all books
-- File-based data storage
-
-
-## 💾 File Handling
-All book data is saved in:
-server/data/books.txt
-
-
-Data is automatically:
-- Loaded on startup
-- Saved after every update
-
-
-## 📊 Data Structures Used
-- Dynamic Array
-- Used to store book records
-- Resizes automatically when full
-
-
-## 🎥 Demo
-A short demo video (`demo.mp4`) is included showing all major features.
-
+✅ *This project is developed for academic purposes and demonstrates core concepts of Data Structures & Algorithms using C++.*
