@@ -140,28 +140,29 @@ Library Management System/
 ├── code/                    # Core business logic
 │   ├── book.h
 │   ├── book.cpp
+|   ├── main.cpp              # Console-only entry point
 │   ├── library.h
 │   └── library.cpp
 │
 ├── ui/                      # GUI components (FLTK)
 │   ├── add_book_window.h/.cpp
+|   ├── gui_main.cpp              # GUI application entry point
 │   ├── borrow_book_window.h/.cpp
 │   ├── return_book_window.h/.cpp
 │   ├── delete_book_window.h/.cpp
 │   └── view_books_window.h/.cpp
 │
 ├── server/                  # Data persistence module
-│   └── data/
+│   ├── server.cpp                # Backend test entry point
+|   └── data/
 │       └── books.txt        # Auto-generated data file
 │
 ├── docs/                    # Documentation and diagrams
-│   ├── report.pdf
+│   └── diagrams.png
+├── testcases/                    # Testcases
 │   ├── test_cases.md
-│   └── diagrams.md
 │
-├── gui_main.cpp              # GUI application entry point
-├── main.cpp                  # Console-only entry point
-├── server.cpp                # Backend test entry point
+└── report.pdf                # Project Report
 └── README.md                 # Project documentation
 ```
 
@@ -172,3 +173,4 @@ Library Management System/
 ---
 
 ✅ *This project is developed for academic purposes and demonstrates core concepts of Data Structures & Algorithms using C++.*
+
