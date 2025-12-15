@@ -168,7 +168,7 @@ Library Management System/
 
 ---
 
-📄 For a detailed explanation of system design, algorithms, and testing, please refer to **`docs/report.pdf`**.
+📄 For a detailed explanation of system design, algorithms, and testing, please refer to **`report.pdf`**.
 
 ## 📌 Note
 
@@ -180,6 +180,7 @@ A complete working demonstration of the Library Management System is available a
 ---
 
 ✅ *This project is developed for academic purposes and demonstrates core concepts of Data Structures & Algorithms using C++.*
+
 
 
 
